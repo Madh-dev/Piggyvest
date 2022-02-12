@@ -1,0 +1,72 @@
+
+body{
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 255, 0.774);
+    
+}
+.fcontainer{
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+    teext-align:center;
+    margin: 30px  400px 35px 450px;
+    padding: 10px 45px;
+    width: 350px;
+    
+    
+    
+    
+}
+label{
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+h1{
+    text-align: center;
+    color:white;
+    
+}
+h2{
+    color:blue;
+    text-align: center;
+    margin-bottom: 0;
+}
+p{
+    text-align: center;
+    margin-top: auto;
+    font-size:15px;
+    color:gray;
+}
+form{
+    maargin:20px
+
+}
+input, select{
+    width:100%;
+    background-color:ghostwhite;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    
+}
+input :active{
+    border:none;
+}
+
+button[type=submit] {
+    text-align: center;
+    background-color: blue;
+    color:white;
+    height:50px;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 8px 8px 8px 0px;
+    border:none;
+}
+a{
+    display: block;
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}

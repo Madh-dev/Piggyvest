@@ -1,0 +1,42 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p.nsg{
+    font-family: cursive;
+}
+
+p {font-size: 40px;}
+a{
+    text-align:left ;
+    max-width: 500px;
+    color:aliceblue;
+    
+    }
+a:hover{
+    color:gray;
+    background-color: black;
+} 
+caption{
+            direction: rtl;
+            unicode-bidi: bidi-override;
+
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: green;
+    padding: 10px 10px;
+    z-index: 1;
+    min-width: 100%;
+    overflow: auto;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+#header{
+    padding:10px;
+}
