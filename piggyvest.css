@@ -595,6 +595,7 @@ h1{
 .headerImg{
     object-fit: cover;
     position: absolute;
+    left: -8%;
 }
 
 .card1{
@@ -850,14 +851,136 @@ footer a{
 a{
     text-decoration: none;
 }
-@media only screen and  (max-width:480px){
-
+@media screen and (max-width:480px){
+    body{
+        max-width: 100%;
+        width:479px;
+    }
+    .sisf{
+        display: none;
+    }
+    .sc{
+        display: none;
+    }
     .col-md-6{
+        flex: 100%;
+        clear: both;
+    }
+    .rt-m{
+        max-width:100%;
+        width:479px;
+        margin-top: 20px;
+        margin-left: 12%;
+        margin-right: auto;
+    }
+    .headerImg{
+        object-fit: cover;
+        position: absolute;
+        right:-5%;
+        left:-0%;
+    }
+    .card1{
+        position: absolute;
+        left: -8%;
+        top: 170px;
+    }
+    .card2{
+        right: 5%;
+        bottom: 50px;
+        position: absolute;
+    }
+    .btn-primary{
+        left:50%;
+    }.d-lg-flex{
+        flex-direction: column;
+    }
+    .col-md-4{
+        width:100%;        
+        margin-bottom: 30px;
+        
+    }
+    .col-md-8{
+        width: 100%;
+
+    }
+    .imgsec{
+        display: block;
+        margin:auto;
+    }
+    .ml-auto{
+        margin: auto;
+    }
+    .investments a.link{
+        display: block;
+        text-align: center;
+    }
+    .col-md-4{
+        flex-direction: column;
+        display: flex;
         flex: 0 0 100%;
         max-width: 100%;
     }
-    body{
-        width:100%;
-        max-width: 100%;
+    .inv-flex{
+        flex-direction: column;
     }
+    .cent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .col-md-5x{
+        display: none;
+    }
+    .col-md-6x{
+        flex: 0 0 100%;
+    }
+    .right{
+        margin: auto;
+    }
+    .featured{
+        display: flex;
+        flex-direction: column;
+    }
+    .col-md-feat{
+        display: flex;
+        flex:100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .col-md-icon{
+        display: flex;
+        flex: 0 0 100%;
+        width: 100%;
+        flex-direction: column;
+        
+    }
+    .col-md-icon a{
+        
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .col-md-2m{
+        flex: 0 0 100%;
+    }
+    
+    .col-md-2x{
+        display: flex;
+        flex:  0 0 100%;
+        flex-direction: column;
+    }
+    .foot{
+        margin:0;
+    }
+    .mt-50{
+        display: flex;
+        flex-direction: column;
+    }
+    .download-btn{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+    }
+    
 }
