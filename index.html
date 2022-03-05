@@ -4,30 +4,57 @@
             <meta lang="en-Us">
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <link rel="stylesheet" href="piggyvest.css">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
             
     </head>
     <body>
         
-         <header>
-             <div class="d-lg-flex al-i-c container pos-rel">
-                 <a  href="###" class="logo">
-                <img src="logo.svg">
-            </a>
-                <div class="sisf">
-                    
-                       <a href="###">Save</a> 
-                        <a href="###">Invest</a>
-                        <a href="###">Stories</a>
-                        <a href="###">FAQs</a>
-                   
+         <nav>
+            <div class="container pos-rel d-lg-flex al-i-c hmm">
+                <a  href="###" class="logo">
+                    <img src="logo.svg">
+                </a>
+                
+                <div class="contain" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="drop">
+                    <ul class="menu">
+                        <li class="nav-item d-block op-1">
+                            <span class="dropdown pos-rel">
+                                <a href="###">Save</a> 
+                            </span>
+                        </li>
+                        <li class="nav-item d-block op-1">
+                            <a href="###">Invest</a>
+                        </li>
+                        <li class="nav-item d-block op-1">
+                            <a href="###">Stories</a>
+                        </li>
+                        <li class="nav-item d-block op-1">
+                            <a href="###">FAQs</a>
+                        </li>
+                        <li class="nav-item d-block op-1">
+                            <a href="###">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ml-auto">
+                    <ul class="btn-group d-block op-1">
+                        <li>
+                            <a class="btn btn-bordered" href="###">Sign in</a>
+                        </li>
+                        <li>
+                            <a class="btn btn-primary" href="project.html">Create Free Account</a>
+                        </li>
+                    </ul>
                 </div>
             
-                <div class="right sc">
-                    <a class="btn btn-bordered" href="###">Sign in</a>
-                   <a class="btn btn-primary" href="project.html">Create Free Account</a>
-                </div>
             </div>
-            </header>
+
+         </nav>
         <section class="header">
         <div class="container">
         <div class="row">
@@ -156,10 +183,10 @@
         </section>
         <section class="interact white">
             <div class>
-        <div class="d-lg-flex">
+        <div class="d-lg-flex flex-d">
             <div class="col-md-7 py-80 d-flex left pos-rel left bg-blue">
                 <div class="content">
-            <h2 class="">Meet the saver of the month!</h2>
+            <h2 class="title bg-blue">Meet the saver of the month!</h2>
             <p class="text">Every month, we shine a spotlight on one saver, asking them questions about their savings culture and how the product is specifically helping them shape how they spend and save for future responsibilities.</p>
            <a href="###" class="link">
                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -169,7 +196,7 @@
         </a> 
         </div>
         </div>
-        <div class="fm" style="background-image:url(saver.jpeg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+        <div class="col-md-5 "  style="background-image:url(saver.jpeg); ">
 
         </div>
     </div>
@@ -209,7 +236,6 @@
                         </div>
                     </div>
                     </div>
-
                 </section> 
                 <footer>
                     <div class="container">
@@ -269,6 +295,10 @@
                 </footer>
 
             </div>
-           
+            <script>
+                function myFunction(x){
+                    x.classList.toggle("change");
+                }
+            </script>
     </body>
 </html>

@@ -16,6 +16,45 @@ body{
     -moz-osx-font-smoothing: grayscale;
     
 }
+.dropdown{
+    display: none;
+}
+nav .menu .nav-item:not(:last-child) {
+    padding-right: 45px;
+}
+nav .btn-group, nav .menu {
+    -webkit-transition: all .3s ease-in;
+    transition: all .3s ease-in;
+}
+nav .btn-group li:not(:last-child) {
+    padding-right: 8px;
+}
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    }
+ul{
+    list-style-type: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    margin: 0;
+    padding: 0;
+}
+ul{
+display: block;
+list-style-type: disc;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+padding-inline-start: 40px;
+}
+
 
 
 img :hover{
@@ -23,7 +62,8 @@ img :hover{
 }
 .pos-rel{
     position: relative;
-}.logo{
+}
+.logo{
     flex: 20%;
 }
 header .sisf a{
@@ -163,7 +203,7 @@ header{
 }
 .ml-auto{
     margin-left: auto;
-    margin-right: 10px;
+    
 }
 .left img{
     max-width: 100px !important;
@@ -396,7 +436,7 @@ h2{
     padding-bottom: 85px;
 }
 .col-md-7{
-    flex: 58.3333%;;
+    flex: 0 0 58.3333%;
 }
 .bg-blue{
     background-color: #0d60d8;
@@ -404,8 +444,13 @@ h2{
 .py-80{
     padding: 80px 0;
 }
-.fm{
+.col-md-5 {
+    -moz-box-flex: 0;
     flex: 0 0 41.666667%;
+    max-width: 0 0 41.666667%;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
 }
 @media only screen and (min-width: 768px){
 .interact .left .content {
@@ -451,7 +496,8 @@ h2{
 .download-btn-full{
     position: relative;
     color: #0c1825!important;
-    padding: 7px 16px!important;    border: 1px solid #ddd!important;
+    padding: 7px 16px!important;  
+    border: 1px solid #ddd!important;
     border-radius: 12px!important;
     margin-top: 35px;
     display: inline-block;
@@ -612,6 +658,10 @@ h1{
     color: #0c1825!important;
     background-color: #fff;
     border: 1px solid #bbb;
+}
+.btn-bordered:hover{
+    color:blue !important;
+    border: 1px solid rgb(8, 8, 243);
 }
 .image{
     top:25px;
@@ -855,12 +905,79 @@ a{
     body{
         max-width: 100%;
         width:479px;
+        font-size: 16px;
+        text-align: center !important;
     }
-    .sisf{
+    .logo{
+        flex: 0 0 30%;
+    }
+    .hmm{
+        display: flex;
+        flex-direction: row;
+    }
+    .contain{
+            flex: 0 0 30%;
+        cursor:pointer;
+    }
+    .bar1, .bar2, .bar3{
+        width: 25px;
+        height: 5px;
+        background-color: rgb(31, 28, 28);
+        margin: 6px 0;
+        transition:0.4s;
+    }
+    .change .bar1{
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .change .bar2{
+        opacity: 0;
+    }
+    .change .bar3{
+        transform: rotate(45deg) translate(-9px, -6px);
+    }
+    .drop, .ml-auto{
         display: none;
     }
-    .sc{
-        display: none;
+    .dropdown{
+        display: inline-block;
+        position: relative;
+    }
+    .dropdown:hover .drop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .btn{
+        display: flex;
+        width:fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mt-50{
+        margin-top:30px;
+    }
+    .download-btn{
+        display: flex;
+        width:fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 7px 16px!important;
+    }
+    .download-btn:last-child{
+        margin-top: 10px;
+        padding: 7px 16px!important;
+    }
+    .download-btn-full{
+        display: flex;
+        width:fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .download-btn-full:first-child{
+        margin-right: auto;
+        margin-bottom: 0;
     }
     .col-md-6{
         flex: 100%;
@@ -889,9 +1006,7 @@ a{
         bottom: 50px;
         position: absolute;
     }
-    .btn-primary{
-        left:50%;
-    }.d-lg-flex{
+   .d-lg-flex{
         flex-direction: column;
     }
     .col-md-4{
@@ -940,27 +1055,39 @@ a{
     .featured{
         display: flex;
         flex-direction: column;
+            background: #f9f9f9;
+            padding-bottom: 70px;;
+        
     }
     .col-md-feat{
         display: flex;
-        flex:100%;
+        flex: 0 0 100%;
         width: 100%;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0px;
     }
     .col-md-icon{
         display: flex;
         flex: 0 0 100%;
         width: 100%;
         flex-direction: column;
-        
-    }
-    .col-md-icon a{
-        
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        margin-top: 10px;
     }
+    .col-md-icon a{
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        margin-top: 30px;
+        top:5px;
+        padding-top: 5px;
+    }
+    .col-md-icon a:first-child{
+        margin-top: 0px;
+    }
+    
     .col-md-2m{
         flex: 0 0 100%;
     }
@@ -973,14 +1100,40 @@ a{
     .foot{
         margin:0;
     }
-    .mt-50{
-        display: flex;
+   .mr-16{
+       
+       margin-right: auto;
+   }
+    .ac-flex .link{
+        color: #7913e5;
+    }
+    .mt-10{
+        margin-top: 0;
+    }
+    .col-md-5{
+        height: 400px;
+    }
+    .col-md-7{
+        flex: 0 0 100%;
+    }
+    .flex-d{
         flex-direction: column;
     }
-    .download-btn{
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 5px;
+    .c-flex p{
+        text-align:left;
     }
+    .col-md-2w{
     
+        margin-left: 0px;
+        margin-right: auto;
+        width:250px;
+    }
+    .col-md-fti{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin-top: 10px;
+        
+    }
 }
