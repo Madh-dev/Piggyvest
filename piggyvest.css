@@ -4,6 +4,9 @@
 div{
     display: block;
 }
+.col-md-10{
+    display: none;
+}
 body{
     box-sizing: border-box;
     padding: 0;
@@ -18,6 +21,9 @@ body{
 }
 .dropdown{
     display: none;
+}
+.drop{
+    margin-right: 190px;
 }
 nav .menu .nav-item:not(:last-child) {
     padding-right: 45px;
@@ -45,15 +51,7 @@ ul{
     margin: 0;
     padding: 0;
 }
-ul{
-display: block;
-list-style-type: disc;
-margin-block-start: 1em;
-margin-block-end: 1em;
-margin-inline-start: 0px;
-margin-inline-end: 0px;
-padding-inline-start: 40px;
-}
+
 
 
 
@@ -66,7 +64,7 @@ img :hover{
 .logo{
     flex: 20%;
 }
-header .sisf a{
+nav .op-1 a{
     color:#0c1825;
     font-weight: 500;
     line-height: 27.2px;
@@ -74,19 +72,21 @@ header .sisf a{
     -webkit-font-smoothing: antialiased;
     font-family: DM Sans,sans-serif!important;
 }
-.sisf{
-    display: flex;
+.ml-auto .btn-bordered{
+    margin-left: 50px;
 }
-.sisf a{
-    padding-right: 45px;
+.nav-item a{
+    padding-right: 10px;
 }
 .logo img{
     position: relative;
     padding-right: 50px;
     bottom: 3px;
 }
-
-header{
+.mq-drop{
+    display: none;
+}
+nav{
     max-width:100%;
     padding: 25px 16px;
     background-color: white;
@@ -95,13 +95,14 @@ header{
     position: -webkit-sticky;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(116, 113, 113, 0.2);
+    margin-bottom: 10px;
    
 }
-.header {
+.nav {
     padding: 170px 16px 100px;
 }
-.header .text h1 {
+.nav .text h1 {
     margin-top: -20px;
 }
 .mt-10{
@@ -422,6 +423,7 @@ h2{
 }
 .tet{
     max-width: 450px;
+    margin: 25px 0;
 }
 
 .content .link {
@@ -628,6 +630,7 @@ h1{
 .rt-m{
    margin-right: 0;
    margin-left: 100px;
+   margin-top: 50px;
 }
 .rect{
     z-index: -3;
@@ -857,6 +860,12 @@ a.learn{
     font-family: U8-Bold!important;
     color: white;
 }
+footer .col-md-2w a{
+     
+        line-height: 21px;
+        margin-bottom: 15px;
+    
+}
 @media only screen and(max-width:480px){
     .col-1, .col-2, .col-3, .col-4, .col-5{
         width:100%;
@@ -865,6 +874,85 @@ a.learn{
     }
     
 }
+@media only screen and (max-width:992px){
+    .header{
+        padding-top: 200px!important;
+        padding-bottom: 10px;
+    }
+    .header .left{
+        display: block;
+        margin-bottom: 90px;
+    }
+    
+    .content, .content p, .header .text, .interact .link, .testimonials .box {
+        margin-left: auto!important;
+        margin-right: auto!important;
+    }
+    .header .text{
+            max-width: 500px;
+    }
+    h1 {
+        font-size: 55px;
+        line-height: 72px;
+    }
+    .header .left p {
+        margin-bottom: 0;
+    }
+    .mt-50{
+        margin-top:10px;
+    }
+    .rt-m{
+        margin-bottom: 20px;
+    }
+    .investments.security {
+        padding-top: 90px;
+        padding-bottom: 70px;
+    }
+    h4 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .savings {
+        padding-bottom: 50px;
+    }
+    .savings .content {
+        margin: auto auto 30px;
+    }
+    h3 {
+        font-size: 33px;
+        line-height: 43px;
+    }
+    .savings .box {
+        padding: 30px!important;
+    }
+    .savings .box .title {
+        max-width: unset;
+    }
+    .investments {
+        padding-top: 20px;
+        padding-bottom: 90px;
+    }
+    .investments h2 {
+        word-break: break-word;
+    }
+    h2 {
+        font-size: 41px;
+        line-height: 54px;
+    }
+    .interact .left {
+        padding-bottom: 80px;
+    }
+    .customers .right {
+        margin-bottom: 30px;
+    }
+}/*
+@media only screen and (max-width:600px){
+    .rt-m{
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left: 35px;
+    }
+}*/
 footer a{
     display: block;
     color: inherit;
@@ -909,15 +997,39 @@ a{
         text-align: center !important;
     }
     .logo{
-        flex: 0 0 30%;
+        flex:  30%;
     }
-    .hmm{
-        display: flex;
-        flex-direction: row;
+    .logo img{
+       
+            position: relative;
+            padding-right: 0;
+            padding-left: 0;
+            
+            display: inline;
     }
+    .headerlogo{
+        flex:50% !important;
+    }
+    .headerlogo img{
+        position: relative;
+        left: -35% !important;
+    }
+    .header{
+        width: 100%;
+        max-width: 100%;
+        padding: 170px 16px 100px;
+    }
+    section{
+        width: 100%;
+    }
+    
     .contain{
-            flex: 0 0 30%;
+        display: inline;
+        flex: 70%;
         cursor:pointer;
+        margin-left: 70%;
+        top:0;
+        position: absolute;
     }
     .bar1, .bar2, .bar3{
         width: 25px;
@@ -925,6 +1037,7 @@ a{
         background-color: rgb(31, 28, 28);
         margin: 6px 0;
         transition:0.4s;
+
     }
     .change .bar1{
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -936,7 +1049,7 @@ a{
     .change .bar3{
         transform: rotate(45deg) translate(-9px, -6px);
     }
-    .drop, .ml-auto{
+    .drop, .m-auto{
         display: none;
     }
     .dropdown{
@@ -955,9 +1068,7 @@ a{
         margin-left: auto;
         margin-right: auto;
     }
-    .mt-50{
-        margin-top:30px;
-    }
+    
     .download-btn{
         display: flex;
         width:fit-content;
@@ -980,38 +1091,28 @@ a{
         margin-bottom: 0;
     }
     .col-md-6{
-        flex: 100%;
-        clear: both;
-    }
-    .rt-m{
         max-width:100%;
-        width:479px;
-        margin-top: 20px;
-        margin-left: 12%;
-        margin-right: auto;
+        width: 100%;
     }
-    .headerImg{
-        object-fit: cover;
-        position: absolute;
-        right:-5%;
-        left:-0%;
+    .header .row{
+        flex-direction: column;
     }
-    .card1{
-        position: absolute;
-        left: -8%;
-        top: 170px;
+    .row{
+        
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: 0;
+            margin-left: 0;
+        
     }
-    .card2{
-        right: 5%;
-        bottom: 50px;
-        position: absolute;
-    }
+    
+   
    .d-lg-flex{
         flex-direction: column;
     }
     .col-md-4{
         width:100%;        
-        margin-bottom: 30px;
+        margin-bottom: 20px;
         
     }
     .col-md-8{
@@ -1051,6 +1152,13 @@ a{
     }
     .right{
         margin: auto;
+    }.col-md-10{
+        width: 100%;
+       
+        display:flex;
+        flex:100%;
+        height: auto;
+        overflow: hidden;
     }
     .featured{
         display: flex;
@@ -1091,7 +1199,13 @@ a{
     .col-md-2m{
         flex: 0 0 100%;
     }
-    
+    .products{
+        
+        flex: 0 0 50%;
+    }
+    .products p{
+        text-align: left !important;
+    }
     .col-md-2x{
         display: flex;
         flex:  0 0 100%;
@@ -1107,11 +1221,12 @@ a{
     .ac-flex .link{
         color: #7913e5;
     }
-    .mt-10{
-        margin-top: 0;
-    }
+    
     .col-md-5{
         height: 400px;
+        max-width: 100%;
+        width: 100%;
+        
     }
     .col-md-7{
         flex: 0 0 100%;
@@ -1125,8 +1240,10 @@ a{
     .col-md-2w{
     
         margin-left: 0px;
-        margin-right: auto;
+        display: block;
         width:250px;
+        left:0;
+        padding-left: 0;
     }
     .col-md-fti{
         display: flex;
@@ -1134,6 +1251,103 @@ a{
         align-items: flex-start;
         align-content: flex-start;
         margin-top: 10px;
+        left: 0px;
+        bottom: 0;
+    }
+    .col-md-2w p{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .interact .left .content {
+        max-width: 100%;
+        margin: auto;
+    }
+    .interact .left .content .text {
+        margin: 15px 0 0;
+        max-width: 100%;
+    }
+    .company{
+        margin-left:10%;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .savings .box h5 {
+        font-size: 19px;
+    }
+    h2 {
+        font-size: 31px!important;
+        line-height: 39px;
+    }
+    .head{
+        margin-bottom: 0;  
+      }
+      .rt-m{
+        max-width:100%;
+        width:479px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card1{
+        position: absolute;
+        left: 7.5%;
+        top: 170px;
+    }
+    .card2{
+        right: 10.5%;
+        bottom: 50px;
+        position: absolute;
+    }
+    .rect{
+        z-index: -3;
+        position: relative;
+        width: 100%;
+        max-width: 70%;
+        height: 572px;
+        left:5%;
+    
+    }
+    .headerImg{
+        object-fit: cover;
+        position: absolute;
+        right:0%;
+        left:-0%;
+        margin-right: auto;
+        margin-left: auto;
+        width: 70%;
+    }
+    /*drop menu*/
+    .mq-drop{
+        display: inline;
+        position: absolute;
+        right:0;
+        top: 20px;
         
+    }
+    ul{
+        display: block;
+        list-style-type: disc;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 40px;
+        }
+    ul{
+        list-style-type: none !important;
+        display: flex !important;
+        flex-direction: column !important;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 45px!important;
+        line-height: 57px;
     }
 }
