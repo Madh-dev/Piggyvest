@@ -1023,44 +1023,11 @@ a{
         width: 100%;
     }
     
-    .contain{
-        display: inline;
-        flex: 70%;
-        cursor:pointer;
-        margin-left: 70%;
-        top:0;
-        position: absolute;
-    }
-    .bar1, .bar2, .bar3{
-        width: 25px;
-        height: 5px;
-        background-color: rgb(31, 28, 28);
-        margin: 6px 0;
-        transition:0.4s;
-
-    }
-    .change .bar1{
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-    }
-    .change .bar2{
-        opacity: 0;
-    }
-    .change .bar3{
-        transform: rotate(45deg) translate(-9px, -6px);
-    }
+   
     .drop, .m-auto{
         display: none;
     }
-    .dropdown{
-        display: inline-block;
-        position: relative;
-    }
-    .dropdown:hover .drop{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+   
 
     .btn{
         display: flex;
@@ -1319,6 +1286,41 @@ a{
         width: 70%;
     }
     /*drop menu*/
+    .contain{
+        display: inline;
+        flex: 70%;
+        cursor:pointer;
+        margin-left: 70%;
+        top:0;
+        position: absolute;
+    }
+    .bar1, .bar2, .bar3{
+        width: 25px;
+        height: 5px;
+        background-color: rgb(31, 28, 28);
+        margin: 6px 0;
+        transition:0.4s;
+
+    }
+    .change .bar1{
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .change .bar2{
+        opacity: 0;
+    }
+    .change .bar3{
+        transform: rotate(45deg) translate(-9px, -6px);
+    }
+    .dropdown{
+        display: inline-block;
+        position: relative;
+    }
+    .dropdown:hover .drop{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .mq-drop{
         display: inline;
         position: absolute;
