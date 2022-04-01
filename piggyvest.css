@@ -83,7 +83,7 @@ nav .op-1 a{
     padding-right: 50px;
     bottom: 3px;
 }
-.mq-drop{
+.men{
     display: none;
 }
 nav{
@@ -206,11 +206,7 @@ nav{
     margin-left: auto;
     
 }
-.left img{
-    max-width: 100px !important;
-    height: auto;
-    width: 100%;
-}
+
 .blue{
     color: #0f5ecc !important;
 }
@@ -387,10 +383,7 @@ svg:not(:root) {
 .investments .left img {
     max-width: 256px;
 }
- .investments .left img{
-    width: 100%!important;
-    height: auto!important;
-}
+
 .ac-flex{
     flex: 0 0 62%;
 }
@@ -945,14 +938,14 @@ footer .col-md-2w a{
     .customers .right {
         margin-bottom: 30px;
     }
-}/*
+}
 @media only screen and (max-width:600px){
     .rt-m{
         padding-left: 16px;
         padding-right: 16px;
         margin-left: 35px;
     }
-}*/
+}
 footer a{
     display: block;
     color: inherit;
@@ -996,24 +989,7 @@ a{
         font-size: 16px;
         text-align: center !important;
     }
-    .logo{
-        flex:  30%;
-    }
-    .logo img{
-       
-            position: relative;
-            padding-right: 0;
-            padding-left: 0;
-            
-            display: inline;
-    }
-    .headerlogo{
-        flex:50% !important;
-    }
-    .headerlogo img{
-        position: relative;
-        left: -35% !important;
-    }
+   
     .header{
         width: 100%;
         max-width: 100%;
@@ -1035,16 +1011,24 @@ a{
         margin-left: auto;
         margin-right: auto;
     }
-    
+    .btn-primary{
+        margin-top: 15px;
+    }
+    .download-btn img {
+        position: relative;
+        top: 0px;
+        
+    }
     .download-btn{
         display: flex;
         width:fit-content;
         margin-left: auto;
         margin-right: auto;
         padding: 7px 16px!important;
+        margin-top: 20px;
     }
     .download-btn:last-child{
-        margin-top: 10px;
+        margin-top: 20px;
         padding: 7px 16px!important;
     }
     .download-btn-full{
@@ -1052,6 +1036,7 @@ a{
         width:fit-content;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 25px;
     }
     .download-btn-full:first-child{
         margin-right: auto;
@@ -1250,107 +1235,128 @@ a{
     .head{
         margin-bottom: 0;  
       }
-      .rt-m{
-        max-width:100%;
-        width:479px;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .card1{
-        position: absolute;
-        left: 7.5%;
-        top: 170px;
-    }
-    .card2{
-        right: 10.5%;
-        bottom: 50px;
-        position: absolute;
-    }
-    .rect{
-        z-index: -3;
-        position: relative;
-        width: 100%;
-        max-width: 70%;
-        height: 572px;
-        left:5%;
-    
-    }
-    .headerImg{
-        object-fit: cover;
-        position: absolute;
-        right:0%;
-        left:-0%;
-        margin-right: auto;
-        margin-left: auto;
-        width: 70%;
-    }
+     
     /*drop menu*/
-    .contain{
-        display: inline;
-        flex: 70%;
-        cursor:pointer;
-        margin-left: 70%;
+    .logo{
+        display: block;
+        float:left;
+    }
+    
+    .logo img{
+            position: relative;
+            padding-right: 10px;
+            padding-left: 50px;
+    }
+    nav{
+        max-width:100%;
+        padding: 25px 16px;
+        background-color: white;
         top:0;
-        position: absolute;
+        position: sticky;
+        position: -webkit-sticky;
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 8px 0 rgba(116, 113, 113, 0.2);
+        margin-bottom: 10px;
+        padding-left:0;
+        padding-right: 0;
+        padding-bottom: 10px;
     }
-    .bar1, .bar2, .bar3{
-        width: 25px;
-        height: 5px;
-        background-color: rgb(31, 28, 28);
-        margin: 6px 0;
-        transition:0.4s;
-
-    }
-    .change .bar1{
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
-    }
-    .change .bar2{
-        opacity: 0;
-    }
-    .change .bar3{
-        transform: rotate(45deg) translate(-9px, -6px);
-    }
-    .dropdown{
-        display: inline-block;
-        position: relative;
-    }
-    .dropdown:hover .drop{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .mq-drop{
-        display: inline;
-        position: absolute;
-        right:0;
-        top: 20px;
+     .c-menu .men{
+    
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
         
     }
-    ul{
+    .c-menu  ul{
+        display: block !important;
+        list-style: none;
+        overflow: hidden;
+    }
+    .c-menu  ul a{
         display: block;
-        list-style-type: disc;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-        padding-inline-start: 40px;
-        }
-    ul{
-        list-style-type: none !important;
-        display: flex !important;
-        flex-direction: column !important;
-        margin: 0;
-        padding: 0;
+        padding:10px;
+        color:#000;
+        font-weight: 550;
     }
-    li{
-        display: flex;
-        justify-content: center;
+    .c-menu .menu-icon{
+       float: right;
+        position: relative;
+        padding:15px;
+        cursor: pointer;
+        margin-left: 25%;
     }
-    h1 {
-        font-size: 45px!important;
-        line-height: 57px;
+    .c-menu .menu-icon .nav-icon{
+        background: #333;
+        display: block;
+        height: 4px;
+        width: 25px;
+        position:relative;
+        transition: background .2s ease-out;
     }
+    .c-menu .menu-icon .nav-icon::before{
+        background: #333;
+        content: "";
+        display: block;
+        height: 4px;
+        width: 25px;
+        transition: all .2s ease-out;
+        position:absolute;
+        top:10px;
+    }
+    .c-menu .menu-icon .nav-icon::after{
+        background: #333;
+        content: "";
+        display: block;
+        height: 4px;
+        width: 25px;
+        transition: all .2s ease-out;
+        position:absolute;
+        top:-10px;
+    }
+    .c-menu .menu-btn{
+        display: none;
+    }
+    .c-menu .menu-btn:checked ~ .men{
+        max-height: 350px;
+    }
+    .c-menu .menu-btn:checked ~ .menu-icon .nav-icon{
+        background: transparent;
+    }
+    .c-menu .menu-btn:checked ~ .menu-icon .nav-icon::before{
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .c-menu .menu-btn:checked ~ .menu-icon .nav-icon::after{
+        transform: rotate(45deg);
+        top:0;
+    }
+   .c-menu .d-lg-flex{
+       display: block !important;
 
+   }
+   /* header img*/
+   .card2{
+    right: 10.5%;
+    bottom: 50px;
+    position: absolute;
+}
+.card1{
+    position: absolute;
+    left: 7.5%;
+    top: 170px;
+}
+.headerImg{
+    object-fit: cover;
+    position: absolute;
+    right:0%;
+    left:-0%;
+    margin-right: auto;
+    margin-left: auto;
+    width: 85%;
+}
+.header{
+    padding-top:50px !important;;
+}
 }
