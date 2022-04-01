@@ -83,8 +83,11 @@ nav .op-1 a{
     padding-right: 50px;
     bottom: 3px;
 }
-.men{
+.menu-btn{
     display: none;
+}
+ul.men{
+    display: none !important;
 }
 nav{
     max-width:100%;
