@@ -941,6 +941,107 @@ footer .col-md-2w a{
     .customers .right {
         margin-bottom: 30px;
     }
+    .drop, .m-auto{
+        display: none;
+    }
+    .logo{
+        display: block;
+        float:left;
+    }
+    
+    .logo img{
+            position: relative;
+            padding-right: 10px;
+            padding-left: 50px;
+    }
+    nav{
+            text-align: left;
+            margin-top: 0;
+            padding: 18px 32px!important;
+    }
+     .c-menu .men{
+    
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+        
+    }
+    .c-menu  ul{
+        display: block !important;
+        list-style: none;
+        overflow: hidden;
+    }
+    .c-menu  ul a{
+        display: block;
+        padding:10px;
+        color:#000;
+        font-weight: 550;
+    }
+    .c-menu .menu-icon{
+       float: right;
+        position: relative;
+        padding:15px;
+        cursor: pointer;
+        margin-left: 25%;
+    }
+    .c-menu .menu-icon .nav-icon{
+        background: #333;
+        display: block;
+        height: 4px;
+        width: 25px;
+        position:relative;
+        transition: background .2s ease-out;
+    }
+    .c-menu .menu-icon .nav-icon::before{
+        background: #333;
+        content: "";
+        display: block;
+        height: 4px;
+        width: 25px;
+        transition: all .2s ease-out;
+        position:absolute;
+        top:10px;
+    }
+    .c-menu .menu-icon .nav-icon::after{
+        background: #333;
+        content: "";
+        display: block;
+        height: 4px;
+        width: 25px;
+        transition: all .2s ease-out;
+        position:absolute;
+        top:-10px;
+    }
+    .c-menu .menu-btn{
+        display: none;
+    }
+    .c-menu .menu-btn:checked ~ .men{
+        max-height: 350px;
+    }
+    .c-menu .menu-btn:checked ~ .menu-icon .nav-icon{
+        background: transparent;
+    }
+    .c-menu .menu-btn:checked ~ .menu-icon .nav-icon::before{
+        transform: rotate(-45deg);
+        top:0;
+    }
+    .c-menu .menu-btn:checked ~ .menu-icon .nav-icon::after{
+        transform: rotate(45deg);
+        top:0;
+    }
+   .c-menu .d-lg-flex{
+       display: block !important;
+
+   }
+   .row{
+       margin-right: 0;
+       margin-left:0;
+   }
+   .card2{
+        right: 10.5%;
+        bottom: 50px;
+        position: absolute;
+    }
 }
 @media only screen and (max-width:600px){
     .rt-m{
@@ -1205,9 +1306,10 @@ a{
         justify-content: flex-start;
         align-items: flex-start;
         align-content: flex-start;
-        margin-top: 10px;
+        margin-top: 15px;
         left: 0px;
         bottom: 0;
+        margin-bottom: 0!important;
     }
     .col-md-2w p{
         margin-top: 0;
@@ -1221,9 +1323,10 @@ a{
         margin: 15px 0 0;
         max-width: 100%;
     }
+    /*
     .company{
         margin-left:10%;
-    }
+    }*/
     h3 {
         font-size: 28px;
         line-height: 38px;
@@ -1247,8 +1350,8 @@ a{
     
     .logo img{
             position: relative;
-            padding-right: 10px;
-            padding-left: 50px;
+            padding-right: 0px;
+            padding-left: 0px;
     }
     nav{
         max-width:100%;
@@ -1265,8 +1368,11 @@ a{
         padding-right: 0;
         padding-bottom: 10px;
     }
+    .men .btn{
+        width: 100%;
+    }
      .c-menu .men{
-    
+        text-align: center;
         clear: both;
         max-height: 0;
         transition: max-height .2s ease-out;
@@ -1288,7 +1394,7 @@ a{
         position: relative;
         padding:15px;
         cursor: pointer;
-        margin-left: 25%;
+        margin-left: 0;
     }
     .c-menu .menu-icon .nav-icon{
         background: #333;
