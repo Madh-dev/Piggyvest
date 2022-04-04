@@ -871,6 +871,9 @@ footer .col-md-2w a{
     
 }
 @media only screen and (max-width:992px){
+    body{
+        text-align: center;
+    }
     .header{
         padding-top: 200px!important;
         padding-bottom: 10px;
