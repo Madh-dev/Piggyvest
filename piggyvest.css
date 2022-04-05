@@ -862,20 +862,13 @@ footer .col-md-2w a{
         margin-bottom: 15px;
     
 }
-@media only screen and(max-width:480px){
-    .col-1, .col-2, .col-3, .col-4, .col-5{
-        width:100%;
-        display: block;
-        clear:both;
-    }
-    
-}
+/*for tablet belo*/
 @media only screen and (max-width:992px){
     body{
         text-align: center;
     }
     .header{
-        padding-top: 200px!important;
+        padding-top: 100px!important;
         padding-bottom: 10px;
     }
     .header .left{
@@ -897,9 +890,7 @@ footer .col-md-2w a{
     .header .left p {
         margin-bottom: 0;
     }
-    .mt-50{
-        margin-top:10px;
-    }
+    
     .rt-m{
         margin-bottom: 20px;
     }
@@ -910,6 +901,7 @@ footer .col-md-2w a{
     h4 {
         font-size: 28px;
         line-height: 36px;
+        margin-block-end: 0;
     }
     .savings {
         padding-bottom: 50px;
@@ -921,19 +913,7 @@ footer .col-md-2w a{
         font-size: 33px;
         line-height: 43px;
     }
-    .savings .box {
-        padding: 30px!important;
-    }
-    .savings .box .title {
-        max-width: unset;
-    }
-    .investments {
-        padding-top: 20px;
-        padding-bottom: 90px;
-    }
-    .investments h2 {
-        word-break: break-word;
-    }
+   
     h2 {
         font-size: 41px;
         line-height: 54px;
@@ -963,7 +943,7 @@ footer .col-md-2w a{
             padding: 18px 32px!important;
     }
      .c-menu .men{
-    
+        text-align: center;
         clear: both;
         max-height: 0;
         transition: max-height .2s ease-out;
@@ -1040,11 +1020,177 @@ footer .col-md-2w a{
        margin-right: 0;
        margin-left:0;
    }
-   .card2{
-        right: 10.5%;
-        bottom: 50px;
-        position: absolute;
+   
+    /*header*/
+    .col-md-6{
+        flex: 0 0 100%;
     }
+    .btn-primary{
+        margin-top: 10px;
+    }
+    .mt-10{
+        margin-top: 10px;
+    }
+    .rt-m {
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+    }
+    /*security*/
+
+    .security .d-lg-flex{
+        flex-direction: column;
+    }
+    .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+   
+    .ml-auto{
+        margin-right: auto;
+    }
+    .text{
+        text-align: center;
+    }
+    /*savings*/
+    .savings .content {
+        margin: auto auto 30px;
+    }
+    .savings .box {
+        padding: 30px!important;
+    }
+    .savings .box .title {
+        max-width: unset;
+    }
+    .col-md-emp{
+        display: none;
+    }
+    /*investment*/
+    .investments {
+        padding-top: 20px;
+        padding-bottom: 90px;
+    }
+    .investments h2 {
+        word-break: break-word;
+        margin-left: auto;
+        margin-right:auto;
+        width: 50%;
+    }
+    .inv-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .imflex {
+        flex: 0 0 100%;
+        height: auto;
+        width: auto;
+    }
+    .ac-flex {
+        flex: 0 0 100%;
+    }
+    .tet{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*interact*/
+    .interact .d-lg-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-md-7 {
+        flex: 0 0 100%;
+    }
+    .interact .right {
+        height: 400px;
+    }
+    .col-md-10{
+        background-size: cover;
+        background-image: url(saver.jpeg);
+        width: 100%;
+        display:flex;
+        flex:100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .col-md-10 img{
+        opacity:0;
+    }
+    /*customers*/
+    .customers .row{
+        flex-direction: column;
+    }
+    .col-md-6x {
+         flex: 0 0 100%;
+         margin-left:auto;
+         margin-right: auto;
+    }
+    .col-md-6x .text{
+        width:420;
+    }
+    /*featured*/
+    .col-md-feat {
+        flex: 100%;
+    }.col-md-icon {
+        flex: 100%;
+        padding-bottom:30px;
+    }
+    .featured {
+        background: #f9f9f9;
+        padding: 65px 16px;
+    }
+    /*footer*/
+    .col-md-2m {
+        flex: 0 0 100%;
+    }
+    .col-md-2s {
+        flex: 0 0 50%;
+    }
+    .col-md-2s p{
+        text-align: left;
+    }
+    .col-md-2x {
+        flex: 0 0 100%;
+        flex-direction: column;
+    }
+    .c-flex{
+        text-align: left;
+    }
+    footer a{
+        line-height: 21px;
+        margin-bottom: 15px;
+    }
+    .col-md-fti {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin-bottom: 0 !important;
+        
+    }
+    .col-md-2w{
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .col-md-2w p{
+        text-align: left;
+        margin-block-start: 0 !important;
+        font-weight: 500;
+    }
+    .foot{
+        margin-left: 0;
+    }
+    .foot p{
+        font-weight: 500;
+    }
+}
+@media only screen and(max-width:480px){
+    .col-1, .col-2, .col-3, .col-4, .col-5{
+        width:100%;
+        display: block;
+        clear:both;
+    }
+    
 }
 @media only screen and (max-width:600px){
     .rt-m{
@@ -1208,6 +1354,7 @@ a{
     }
     .col-md-6x{
         flex: 0 0 100%;
+        width:100%;
     }
     .right{
         margin: auto;
